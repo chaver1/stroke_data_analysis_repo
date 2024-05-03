@@ -1,0 +1,14 @@
+Notes on Data Structure:
+Initial Dimensions: 5110 x 12 dimensions
+Columns: {
+num: id, age, hypertension, heart_disease, avg_glucose level, stroke
+chr: gender, ever_married, work_type, residency_type, bmi, smoking_status
+} *those with (NA) or (NULL) contain those values in those columns
+*bmi is mostly numerical data, so while the other chr data can be factorized,
+bmi should first be converted to numerical data and then the rows with missing
+values should be removed.
+
+Useful Variable Groupings:
+-demographics: age, gender, ever_married, work_type, residency_type
+-clinical data: hypertensions, heart_disease, avg_glucose_level, stroke,
+bmi, smoking_status
